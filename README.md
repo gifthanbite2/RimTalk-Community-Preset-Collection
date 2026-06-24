@@ -42,17 +42,31 @@ We love new presets! To add yours to the collection:
 
 1. **Fork/Check out** this repository.
 2. **Create a folder** under `/presets/` named after your username or alias.
-3. **Add your exported JSON** file to that folder.
-4. **Add a plain text file of your preset** file to that folder, so others can read the ruleset easily.
-4. **Include a README.md** in your folder using the template provided in `/templates/CONTRIBUTOR_README.md`.
+3. **Add your exported JSON** file and a **plain text version** (`.txt`) directly to your username folder. *(Note: If you are contributing multiple presets, please create a sub-folder for each preset).*
+4. **Include a README.md** in the folder using the template provided in `/templates/CONTRIBUTER_README.md`.
 5. **Create a Pull Request** with a brief description of what your preset does.
 
 ### Directory Structure Example
 
-```
+**Single Preset:**
+```text
 presets/
 ├── your-username/
-│   ├── cool-preset.json
-│   ├── cool-preset.txt
+│   ├── Cool-Preset.json
+│   ├── Cool-Preset.txt
 │   └── README.md
+```
+
+**Multiple Presets:**
+```text
+presets/
+├── your-username/
+│   ├── Cool Preset 1/
+│   │   ├── Cool-Preset-1.json
+│   │   ├── Cool-Preset-1.txt
+│   │   └── README.md
+│   ├── Cool Preset 2/
+│   │   ├── Cool-Preset-2.json
+│   │   ├── Cool-Preset-2.txt
+│   │   └── README.md
 ```

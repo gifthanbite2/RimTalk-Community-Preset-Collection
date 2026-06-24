@@ -1,3 +1,5 @@
+[← Back to Preset Collection](../README.md)
+
 # Preset Name: RimTalk Default Revised
 *Created by r33Cy*
 
@@ -10,13 +12,15 @@ The **RimTalk Default Revised** preset is a high-fidelity "Scene Director" for R
 
 ## Key Features
 
-* **Grounded Interpretation (Mandatory Translation):** This preset interprets logs containing mixed English and Chinese characters and translates all concepts into standard, grounded RimWorld terminology. It prioritizes naturalistic prose over flowery descriptions.
-* **Character Archetype Enforcement:** Dialogue is filtered through status-specific roles: **Colonists** prioritize safety and productivity, **Prisoners** focus on escape or survival, and **Slaves** MUST address colonists with submissive respect while focusing on labor.
-* **Personality-Driven Syntax (The Personality Lock):** The preset utilizes a vast array of over 30 distinct personality overrides—including "Literal," "Stoic," "Abrasive," "Haughty," and "Simpleton"—to dictate the specific rhythm, vocabulary, and grammar of a pawn’s speech.
+* **Naturalistic Lexicon (Mandatory Translation):** Ensures raw game-engine UI terms (like "Ate without table") are translated into naturalistic in-universe concepts. It prioritizes grounded, physical descriptions of survival over reciting mechanics.
+* **Sci-Fi & RimWorld Lore Native:** Explicitly encourages the use of standard RimWorld sci-fi terminology (e.g., charge rifles, drop pods, plasteel, mechanoids).
+* **Character Archetype Enforcement:** Dialogue is filtered through status-specific roles: **Colonists** prioritize survival and colony life, **Prisoners** focus on escape or survival, and **Slaves** MUST address colonists with submissive respect ("Master" or "Mistress").
+* **Personality-Driven Syntax (The Personality Lock):** The preset utilizes nearly 50 distinct personality overrides—including "Cold Rationalist," "Hothead," "Skeptical Scientist," and "Grumpy Elder"—to dictate the specific rhythm, vocabulary, and grammar of a pawn’s speech.
 * **Dynamic Social Mode Logic:** The system intelligently switches between **Solo Mode** (a single internal thought or soliloquy) and **Social Mode**, which mandates a dialogue chain of **4 to 8 turns** to ensure a natural back-and-forth.
-* **"Show, Don't Tell" Mandate:** To maintain immersion, the preset requires pawns to express feelings and needs directly through dialogue rather than narrator-style prose.
+* **Relational Friction Protocol:** Injects realistic drama by allowing colonists to bypass standard polite behaviour and initiate arguments or slights—even with their spouses or best friends—if their mood drops too low or if they have a volatile personality.
+* **"Show, Don't Tell" Mandate:** To maintain immersion, the preset requires pawns to express feelings and needs directly through active dialogue rather than narrator-style prose.
 * **Colony & World Awareness:** Integrated with **Event+**, pawns are aware of active threats, map conditions, and ongoing quests, allowing them to discuss the state of the world in real-time.
-* **Gender-Locked Address:** The AI cross-references the [Gender] field to ensure appropriate address terms are used correctly during interactions.
+* **Gender-Locked Address:** The AI cross-references the [Gender] field to ensure appropriate pronouns and address terms are used correctly during interactions.
 * **Cognitive Consistency:** Features a strict **Scene Execution Protocol** that ensures the AI stays on topic, avoids repetitive tropes, and uses the History Layer for background continuity only.
 * **Advanced Profile Engineering:** The preset uses custom logic to clean raw game data, renaming conflicting tags to "Current Mood Modifiers" and stripping technical formatting for a cleaner AI prompt.
 * **"Crowded Thought" Trigger:** Implements a specific rule where if a pawn has a "thought" in a social setting, the AI forces them to "mutter aloud" to allow nearby pawns to hear and react, triggering a social dialogue chain.
@@ -28,46 +32,4 @@ The **RimTalk Default Revised** preset is a high-fidelity "Scene Director" for R
 
 ---
 
-## Required Add-On Mods
-* [RimTalk](https://steamcommunity.com/sharedfiles/filedetails/?id=3551203752) (Main Framework)
-* [RimTalk Event+](https://steamcommunity.com/sharedfiles/filedetails/?id=3612632140) (For quest, threat and map condition awareness)
-* [RimTalk - Expand Memory](https://steamcommunity.com/sharedfiles/filedetails/?id=3608181242) (For conversational continuity)
-* [RimTalk - Expand Thoughts](https://steamcommunity.com/sharedfiles/filedetails/?id=3661175034) (For psychological depth)
-
-## Recommended Add-On Mods
-*These mods aren't required, but they greatly enhance the experience of this preset.*
-* [RimTalk: Expand Literature](https://steamcommunity.com/sharedfiles/filedetails/?id=3633249209)  (Converts the subjective thoughts recorded by *Expand Thoughts* into tangible opinion changes in the social panel)
-* [RimTalk: Expand Relation](https://steamcommunity.com/sharedfiles/filedetails/?id=3661493651) (To track opinion changes; Trust, affection, and respect automatically influence social standings with gradual, smooth changes that track thought decay)
-* [RimTalk DynamicColors](https://steamcommunity.com/sharedfiles/filedetails/?id=3628773219) (For visual highlighting for names and keywords, making dialogue easier to follow)
-
----
-
-## Preset Notes
-*These are not necessary for the preset to function but my current settings that work well for me.*
-
-### AI Model & Provider
-* **Model:** DeepSeek-R1-Distill-Qwen-32B-GGUF
-* **Provider/API:** LlamaCpp (Local)
-
-The listed model is an example that works well with this preset but requires high-end hardware for local inference (preferably a GPU with at least **32 GB of VRAM** if running both the model and game on the same system). Users are free to choose any model and should select a size that matches their available VRAM to ensure smooth performance.
-
-### AI Settings Tips
-* **Logic & Creativity:**
-    * **Temperature:** `0.78` — Controls randomness; higher values make medieval prose more creative and flowery. Don't go above `0.85`.
-    * **Min-P:** `0.03` — Strips away low-probability "nonsense" tokens while keeping the vocabulary diverse.
-    * **Top-P:** `1.0` — Limits the cumulative probability of word choices to ensure consistent logic. A setting of `1.0` equals disabled. We are letting `Min-P`, the better filter, do the work.
-    * **Top-K:** `50` — Restricts the model to selecting from the 50 most likely next words. At higher temperatures (above `0.72`), this acts as a safeguard.
-* **Repetition Control:**
-    * **Repeat Penalty:** `1.05` — Discourages the AI from using the exact same word too frequently in a short window.
-    * **Repeat Last N:** `4096` — The token range the AI scans to identify and penalize repeated words.
-* **DRY Sampler (The "Nuclear" Fix):**
-    * **Dry Mult:** `0.5` — The strength of the DRY penalty; keeps the AI from repeating medieval tropes too often.
-    * **Dry Base:** `1.75` — The exponential factor for the penalty, making repetitive phrases increasingly unlikely.
-    * **Dry Allowed Len:** `10` — Allows short, common medieval phrases (up to 10 characters) to be reused without penalty.
-    * **Dry Penalty Last N:** `4096` — Controls how far back the DRY sampler looks to identify repetitive patterns.
-* **DeepSeek Reasoning Format:**
-    * **Format:** `deepseek` — Critical setting. Allows the model to extract thoughts into a hidden field so the game only receives clean dialogue.
-* **Context Length:** `24576` (24k) — Essential for handling the heavy data overhead from the **Expand** mod series.
-
-### Other Details
-Due to the complexity of the "Personality Lock" and the "Gritty Lexicon," this preset is best paired with **Reasoning Models** (like DeepSeek-R1 or similar) that can handle the complex "Scene Execution Protocol" without breaking character.
+For required/recommended mods, AI settings, and provider details, please refer to the [top-level README](../README.md).
