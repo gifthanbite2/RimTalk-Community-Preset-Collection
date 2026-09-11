@@ -1,55 +1,30 @@
-# Preset Name: RimTalk Default Revised
+# 프리셋 이름: RimTalk Default Revised
 
-[svg](https://github.com/gifthanbite2/RimTalk-Community-Preset-Collection/blob/main/presets/r33Cy/RimTalk%20Default%20Revised/README.md#preset-name-rimtalk-default-revised)
 
-*Created by r33Cy*
+*제작자: r33Cy*
 
-## Summary
+## 개요
 
-[svg](https://github.com/gifthanbite2/RimTalk-Community-Preset-Collection/blob/main/presets/r33Cy/RimTalk%20Default%20Revised/README.md#summary)
 
-The **RimTalk Default Revised** preset is a high-fidelity "Scene Director" for RimWorld, designed to generate immersive, grounded interactions based on real-time JSON data. It interprets mixed-language inputs and converts them into a naturalistic survival-style dialogue system. By mapping game concepts to grounded terminology, it creates an atmospheric experience where pawns interact as reactive members of a harsh world.
+**RimTalk Default Revised** 프리셋은 RimWorld의 실시간 JSON 데이터를 기반으로 몰입감 있고 현실적인 상호작용을 생성하도록 설계된 고충실도 **"씬 디렉터(Scene Director)"**입니다. 혼합된 언어로 입력되는 게임 데이터를 해석하고 이를 자연스럽고 생존 중심적인 대화 시스템으로 변환합니다. 게임 내부의 개념을 세계관에 어울리는 자연스러운 용어로 변환함으로써, 폰들이 혹독한 세계에서 살아가는 실제 구성원처럼 상황에 반응하도록 하여 몰입감 있는 분위기를 만들어냅니다.
 
-This preset has been **localized for Korean-speaking RimWorld players**. All generated dialogue is intended to be output naturally in **Korean**, while preserving RimWorld's original sci-fi terminology, character personalities, social relationships, and immersive survival atmosphere.
+본 프리셋은 **한국인 RimWorld 사용자를 위해 한국어 출력에 맞게 로컬라이징되었습니다.** 생성되는 모든 대화는 자연스러운 **한국어**를 기본으로 하며, RimWorld의 고유한 SF 용어, 캐릭터의 성격, 사회적 관계 및 생존 중심의 분위기를 그대로 유지합니다.
 
-**Best Used With:** High-immersion playthroughs focusing on survival and social depth, especially for Korean-speaking players.
+**추천 사용 방식:** 생존과 사회적 깊이에 중점을 둔 고몰입 플레이, 특히 한국어로 RimWorld를 플레이하는 사용자에게 적합합니다.
 
 ---
 
-## Key Features
+## 주요 기능
 
-[svg](https://github.com/gifthanbite2/RimTalk-Community-Preset-Collection/blob/main/presets/r33Cy/RimTalk%20Default%20Revised/README.md#key-features)
 
-- **Naturalistic Lexicon (Mandatory Translation):** Ensures raw game-engine UI terms (like "Ate without table") are translated into naturalistic in-universe concepts. It prioritizes grounded, physical descriptions of survival over reciting mechanics. For Korean localization, these concepts are expressed using natural Korean phrasing rather than literal translations or raw game-engine terminology.
+* **자연스러운 어휘 사용(필수 번역):** `"Ate without table"`과 같은 게임 엔진의 원시적인 UI 용어를 세계관에 어울리는 자연스러운 표현으로 반드시 변환합니다. 게임 메커니즘을 그대로 읊는 것보다 생존 상황에 대한 현실적이고 물리적인 묘사를 우선합니다. 한국어 환경에서는 기계적인 직역이나 원본 게임 문구를 그대로 반복하지 않고 자연스러운 한국어 표현으로 변환합니다.
 
-- **Sci-Fi & RimWorld Lore Native:** Explicitly encourages the use of standard RimWorld sci-fi terminology (e.g., charge rifles, drop pods, plasteel, mechanoids). Official RimWorld terminology should be preserved or naturally localized into Korean where appropriate, while avoiding unnecessary translation that would weaken the setting's identity.
+* **SF 및 RimWorld 세계관 준수:** 차지 라이플, 드랍 포드, 플라스틸, 메카노이드와 같은 RimWorld의 표준 SF 용어를 적극적으로 사용하도록 합니다. RimWorld의 고유 용어와 세계관을 유지하면서, 필요한 경우 한국어 사용자에게 자연스럽게 이해될 수 있는 형태로 표현합니다.
 
-- **Character Archetype Enforcement:** Dialogue is filtered through status-specific roles: **Colonists** prioritize survival and colony life, **Prisoners** focus on escape or survival, and **Slaves** MUST address colonists with submissive respect ("Master" or "Mistress"), naturally localized into appropriate Korean forms such as "주인님" or "여주인님" when speaking Korean.
+* **캐릭터 유형에 따른 역할 강제:** 대화는 폰의 사회적 신분과 역할에 따라 결정됩니다. **정착민(Colonists)**은 생존과 정착지 생활을 우선하며, **죄수(Prisoners)**는 탈출과 생존에 집중하고, **노예(Slaves)**는 정착민에게 반드시 복종적인 태도를 취하며 `"주인님"` 또는 `"여주인님"`과 같은 적절한 호칭을 사용해야 합니다.
 
-- **Personality-Driven Syntax (The Personality Lock):** The preset utilizes nearly 50 distinct personality overrides—including "Cold Rationalist," "Hothead," "Skeptical Scientist," and "Grumpy Elder"—to dictate the specific rhythm, vocabulary, grammar, and speech style of a pawn's dialogue. Korean dialogue must preserve these personality differences through appropriate word choice, sentence endings, honorifics, speech levels, and conversational habits.
+* **성격 기반 말투 고정(Personality Lock):** 약 50가지에 달하는 다양한 성격 규칙을 활용하여 폰의 대화 방식에 차이를 만듭니다. 여기에는 `"냉정한 합리주의자(Cold Rationalist)"`, `"다혈질(Hothead)"`, `"회의적인 과학자(Skeptical Scientist)"`, `"심술궂은 노인(Grumpy Elder)"` 등이 포함됩니다. 성격에 따라 말의 리듬, 어휘, 문법, 문장 종결 방식, 존댓말과 반말, 표현 습관 등이 달라져야 합니다.
 
-- **Dynamic Social Mode Logic:** The system intelligently switches between **Solo Mode** (a single internal thought or soliloquy) and **Social Mode**, which mandates a dialogue chain of **4 to 8 turns** to ensure a natural back-and-forth.
+* **동적 사회 모드 로직:** 시스템은 상황에 따라 **독백 모드(Solo Mode)**와 **사회적 대화 모드(Social Mode)**를 지능적으로 전환합니다. **독백 모드**에서는 한 명의 폰이 자신의 생각이나 혼잣말을 표현하며, **사회적 대화 모드**에서는 자연스러운 주고받기를 위해 **4~8회의 대화 턴**으로 이어지는 대화 흐름을 구성합니다.
 
-- **Relational Friction Protocol:** Injects realistic drama by allowing colonists to bypass standard polite behaviour and initiate arguments or slights—even with their spouses or best friends—if their mood drops too low or if they have a volatile personality. Korean speech should reflect the appropriate level of hostility, familiarity, politeness, and emotional intensity.
-
-- **"Show, Don't Tell" Mandate:** To maintain immersion, the preset requires pawns to express feelings and needs directly through active dialogue rather than narrator-style prose. Emotional states should be conveyed through what the pawn says, how they say it, and their speech style rather than explicit narrative explanations.
-
-- **Colony & World Awareness:** Integrated with **Event+**, pawns are aware of active threats, map conditions, and ongoing quests, allowing them to discuss the state of the world in real-time. These situations should be expressed naturally in Korean while preserving the original RimWorld context.
-
-- **Gender-Locked Address:** The AI cross-references the [Gender] field to ensure appropriate pronouns and address terms are used correctly during interactions. Korean-specific forms of address, titles, kinship terms, and honorifics should be selected according to the pawn's gender, relationship, age, social status, and context when relevant.
-
-- **Cognitive Consistency:** Features a strict **Scene Execution Protocol** that ensures the AI stays on topic, avoids repetitive tropes, and uses the History Layer for background continuity only. Previous events should influence dialogue naturally without being mechanically repeated or quoted.
-
-- **Advanced Profile Engineering:** The preset uses custom logic to clean raw game data, renaming conflicting tags to "Current Mood Modifiers" and stripping technical formatting for a cleaner AI prompt. Internal game data should be treated as contextual information rather than dialogue to be repeated verbatim.
-
-- **"Crowded Thought" Trigger:** Implements a specific rule where if a pawn has a "thought" in a social setting, the AI forces them to "mutter aloud" to allow nearby pawns to hear and react, triggering a social dialogue chain. The resulting mutter should be expressed naturally in Korean and should sound like an actual spontaneous utterance rather than an explanation of the pawn's internal thought.
-
-- **Beast Addressing Logic:** Contains specialized protocols for interacting with animals, forcing the AI to use instinctive or survivalist language. Korean dialogue toward animals should reflect the pawn's personality and the animal's nature rather than treating the animal exactly like a human conversation partner.
-
-- **Data Quarantine Protocol:** Strictly forbids the AI from parroting raw text from internal perspectives or chronological events; it forces the generation of entirely new dialogue based on those contexts. Raw game data, thoughts, history entries, and event descriptions must never be copied directly into the generated dialogue.
-
-- **The "Void Rule":** Automatically cross-checks the `CanTalk` status from pawn profiles; if a pawn is incapacitated or otherwise ineligible, the system locks the AI into a "None" action.
-
-- **Korean Localization Restriction:** The preset has been specifically localized for Korean-speaking users. Generated pawn dialogue MUST be written naturally in **Korean (한국어)** rather than English, Chinese, or Japanese. Korean grammar, honorifics, speech levels, sentence endings, spacing, and natural conversational expressions should be used appropriately according to each pawn's personality, age, gender, relationship, social status, and situation. RimWorld-specific proper nouns and established sci-fi terminology may remain in their recognizable form when translating them would reduce clarity or immersion. Do not output unnecessary CJK mixing, machine-translated phrasing, raw internal tags, technical formatting, or unnatural literal translations.
-
-- **Punchy Interaction (Brevity Mandate):** Limits each speech turn to a maximum of **30-40 words**, ensuring the dialogue remains reactive and fits within UI constraints. Korean dialogue should remain concise and conversational while preserving the pawn's personality and emotional state.
+* **관계 갈등 프로토콜(Relational Friction Protocol):** 폰의 기분이 지나치게 낮거나 성격이 변덕스럽고 공격적인 경우, 일반적인 예의나 친밀한 관계를 무시하고 갈등을 일으킬 수 있도록 합니다. 배우자나 가장 친한 친구와도 말다툼, 빈정거림, 무례한 발언 등을 시작할 수 있습니다. 한국어 대화에서는 폰의 관계, 친밀도, 감정 상태에 맞춰 존댓말·반말
